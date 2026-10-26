@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Advisory Practice | StrataCore Analytics LLC</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 1.5rem; }
+  </style>
+</head>
+<body>
+  <div class="drawer-backdrop" id="backdrop" onclick="toggleDrawer()"></div>
+  <aside class="drawer-panel" id="drawer">
+    <div>
+      <button class="drawer-close" onclick="toggleDrawer()">&times;</button>
+      <div style="font-family: 'JetBrains Mono'; font-size: 0.72rem; color: var(--bronze); text-transform: uppercase; margin-top: 1.5rem;">Corporate Menu</div>
+      <ul class="drawer-nav">
+        <li><a href="../index.html">Firm Overview <span>&rarr;</span></a></li>
+        <li><a href="index.html">Wing A: Corporate Advisory <span>&rarr;</span></a></li>
+        <li><a href="../research/index.html">Wing B: Quantitative Research <span>&rarr;</span></a></li>
+        <li><a href="../plans/index.html">Engagement Plans & Fees <span>&rarr;</span></a></li>
+        <li><a href="../contact/index.html">Direct Ingestion & Contact <span>&rarr;</span></a></li>
+      </ul>
+    </div>
+    <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+      <strong>StrataCore Analytics LLC</strong><br>
+      105 Truman Drive, Wood Ridge, NJ 07075<br>
+      advisory@stratacoreanalytics.com
+    </div>
+  </aside>
+
+  <header>
+    <div class="nav-container">
+      <a href="../index.html"><img src="../logo.svg" alt="StrataCore Analytics" class="brand-svg"></a>
+      <div class="nav-right">
+        <div class="wing-pill-container">
+          <a href="index.html" class="wing-pill active">Wing A: Advisory</a>
+          <a href="../research/index.html" class="wing-pill">Wing B: Research</a>
+        </div>
+        <button class="menu-btn" onclick="toggleDrawer()" aria-label="Open Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-split">
+    <div>
+      <span class="hero-tag">Wing A: Corporate Advisory</span>
+      <h1>Corporate Financial Modeling & Advisory Capabilities</h1>
+      <p>Specialized financial engineering, cash runway audits, multi-stage DCF valuations, and capital structure advisory engineered for operating management, corporate boards, and SMEs.</p>
+      <div>
+        <a href="../plans/index.html#advisory-fees" class="btn-bronze">View Advisory Fee Structure</a>
+        <a href="../contact/index.html" class="btn-outline">Initiate Intake</a>
+      </div>
+    </div>
+    <div class="hero-img-box">
+      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80" alt="Financial Modeling Review" class="hero-img">
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="section-title">
+      <div style="font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--bronze); text-transform: uppercase;">Core Capabilities</div>
+      <h2>Strategic Advisory Competencies</h2>
+      <p>Comprehensive quantitative support structured to solve corporate cash runway, valuation, and capital allocation challenges.</p>
+    </div>
+
+    <div class="grid-3">
+      <!-- Competency I -->
+      <div class="card-photo-box" style="padding: 2.25rem;">
+        <div class="card-tag">Competency I</div>
+        <h3 style="color: #FFF; margin-bottom: 0.75rem; font-size: 1.25rem;">Three-Statement Forecasting</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.65; margin-bottom: 1.25rem;">
+          Construction of dynamic, formula-linked financial statements projecting Income Statement, Balance Sheet, and Cash Flow trajectories across 12 monthly and 3–5 annual horizons.
+        </p>
+        <ul class="feature-list" style="font-size: 0.85rem;">
+          <li>Automated working capital cycles (DSO, DIO, DPO)</li>
+          <li>Debt amortization & cash flow linkage</li>
+          <li>Base, Upside, and Downside toggles</li>
+        </ul>
+      </div>
+
+      <!-- Competency II -->
+      <div class="card-photo-box" style="padding: 2.25rem; border: 2px solid var(--border-focus);">
+        <div class="card-tag">Competency II</div>
+        <h3 style="color: #FFF; margin-bottom: 0.75rem; font-size: 1.25rem;">DCF Valuation Suite</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.65; margin-bottom: 1.25rem;">
+          Quantitative multi-stage Discounted Cash Flow models projecting Unlevered Free Cash Flows (UFCF) to establish enterprise and equity value ranges for planning or capital raises.
+        </p>
+        <ul class="feature-list" style="font-size: 0.85rem;">
+          <li>Gordon Growth & Exit Multiples sensitivities</li>
+          <li>Cross-matrix discount rate tables</li>
+          <li>Comparable company trading multiples</li>
+        </ul>
+      </div>
+
+      <!-- Competency III -->
+      <div class="card-photo-box" style="padding: 2.25rem;">
+        <div class="card-tag">Competency III</div>
+        <h3 style="color: #FFF; margin-bottom: 0.75rem; font-size: 1.25rem;">Cost of Capital & Retainer</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.65; margin-bottom: 1.25rem;">
+          Hurdle rate derivation via WACC and ongoing fractional finance support, providing monthly actual-vs-budget variance tracking and executive board presentations.
+        </p>
+        <ul class="feature-list" style="font-size: 0.85rem;">
+          <li>CAPM equity beta adjustments & debt spreads</li>
+          <li>Project Net Present Value (NPV / IRR)</li>
+          <li>Bi-weekly executive debriefs</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Diagnostic Audit Callout -->
+    <div style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 8px; padding: 1.5rem 2rem; margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <strong style="color: #10B981; font-family: 'JetBrains Mono'; font-size: 0.8rem; text-transform: uppercase;">Need Immediate Cash Runway Clarity?</strong>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.25rem 0 0;">We offer an introductory 5–7 day Financial Health & Diagnostic Audit for $450 (100% credited toward Plan I).</p>
+      </div>
+      <a href="../plans/index.html#advisory-fees" class="btn-bronze" style="padding: 0.6rem 1.25rem; font-size: 0.85rem; background: #059669; color: #FFF;">Explore Audit Scope &rarr;</a>
+    </div>
+
+    <div class="info-section" style="margin-top: 4rem;">
+      <div class="info-header">
+        <div style="font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--bronze); text-transform: uppercase;">Standardized Workflow</div>
+        <h3>The 3-Stage Delivery Cadence</h3>
+        <p>Every modeling engagement follows a disciplined 3-stage delivery roadmap to ensure formula integrity, client transparency, and audit readiness.</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h4>Stage 1: Ingestion & Driver Audit</h4>
+          <p>Historical book intake (24–36 months), chart of accounts cleaning, non-recurring adjustments, and driver baseline verification.</p>
+        </div>
+        <div class="info-card">
+          <h4>Stage 2: Structural Logic Sign-Off</h4>
+          <p>Delivery of preliminary financial models (or valuation draft) for management assumption review and operational logic validation.</p>
+        </div>
+        <div class="info-card">
+          <h4>Stage 3: Unlocked Hand-off & Debrief</h4>
+          <p>Final release of editable, formula-visible Excel workbooks, dynamic scenario toggles, executive slide decks, and live walkthroughs.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem; border-top: 1px solid var(--border-subtle); padding-top: 2rem;">
+        <p style="color: var(--text-muted); margin-bottom: 1.25rem; font-size: 1rem;">Ready to review our structured advisory packages and Schedule A fee schedule?</p>
+        <a href="../plans/index.html#advisory-fees" class="btn-bronze" style="padding: 1rem 2.5rem; font-size: 1rem;">Review Advisory Fee Schedules & Engagement Plans &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p><strong>StrataCore Analytics LLC</strong> &bull; Advisory Desk &bull; <a href="mailto:advisory@stratacoreanalytics.com" style="color: var(--bronze); text-decoration: none;">advisory@stratacoreanalytics.com</a></p>
+      <div class="disclaimer-box">
+        Corporate advisory deliverables and financial projections are prepared solely for internal management planning, governance, and capital budgeting under bilateral Master Client Service Agreement terms.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDrawer() {
+      document.getElementById('drawer').classList.toggle('active');
+      document.getElementById('backdrop').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Intake & Contact | StrataCore Analytics LLC</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="drawer-backdrop" id="backdrop" onclick="toggleDrawer()"></div>
+  <aside class="drawer-panel" id="drawer">
+    <div>
+      <button class="drawer-close" onclick="toggleDrawer()">&times;</button>
+      <div style="font-family: 'JetBrains Mono'; font-size: 0.72rem; color: var(--bronze); text-transform: uppercase; margin-top: 1.5rem;">Corporate Menu</div>
+      <ul class="drawer-nav">
+        <li><a href="../index.html">Firm Overview <span>&rarr;</span></a></li>
+        <li><a href="../advisory/index.html">Wing A: Corporate Advisory <span>&rarr;</span></a></li>
+        <li><a href="../research/index.html">Wing B: Quantitative Research <span>&rarr;</span></a></li>
+        <li><a href="../plans/index.html">Engagement Plans & Fees <span>&rarr;</span></a></li>
+        <li><a href="index.html">Direct Ingestion & Contact <span>&rarr;</span></a></li>
+      </ul>
+    </div>
+    <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+      <strong>StrataCore Analytics LLC</strong><br>
+      105 Truman Drive, Wood Ridge, NJ 07075<br>
+      contact@stratacoreanalytics.com
+    </div>
+  </aside>
+
+  <header>
+    <div class="nav-container">
+      <a href="../index.html"><img src="../logo.svg" alt="StrataCore Analytics" class="brand-svg"></a>
+      <div class="nav-right">
+        <div class="wing-pill-container">
+          <a href="../advisory/index.html" class="wing-pill">Wing A: Advisory</a>
+          <a href="../research/index.html" class="wing-pill">Wing B: Research</a>
+        </div>
+        <button class="menu-btn" onclick="toggleDrawer()" aria-label="Open Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-split">
+    <div>
+      <span class="hero-tag">Corporate Intake</span>
+      <h1>Corporate Communications & Engagement Intake</h1>
+      <p>Initiate a financial modeling engagement, book a diagnostic audit, or request institutional research publication access.</p>
+    </div>
+    <div class="hero-img-box">
+      <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80" alt="Executive Corporate Boardroom" class="hero-img">
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="grid-2">
+      <!-- Direct Intake Form -->
+      <div class="card-photo-box" style="padding: 2.5rem;">
+        <div>
+          <div class="card-tag">Direct Intake</div>
+          <h3>Initiate Engagement</h3>
+          <p>Submit your inquiry below to initiate communications with our desk:</p>
+          
+          <form action="mailto:contact@stratacoreanalytics.com" method="POST" enctype="text/plain">
+            <div style="margin-bottom: 1.15rem;">
+              <label style="display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text-muted);">Company / Legal Entity</label>
+              <input type="text" name="Company" required style="width: 100%; padding: 0.75rem; background: #0E1424; border: 1px solid var(--border-subtle); border-radius: 4px; font-size: 0.9rem; color: #FFF;">
+            </div>
+
+            <div style="margin-bottom: 1.15rem;">
+              <label style="display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text-muted);">Contact Name & Title</label>
+              <input type="text" name="Contact_Name" required style="width: 100%; padding: 0.75rem; background: #0E1424; border: 1px solid var(--border-subtle); border-radius: 4px; font-size: 0.9rem; color: #FFF;">
+            </div>
+
+            <div style="margin-bottom: 1.15rem;">
+              <label style="display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text-muted);">Corporate Email</label>
+              <input type="email" name="Email" required style="width: 100%; padding: 0.75rem; background: #0E1424; border: 1px solid var(--border-subtle); border-radius: 4px; font-size: 0.9rem; color: #FFF;">
+            </div>
+
+            <!-- Calibrated Engagement Scope Dropdown -->
+            <div style="margin-bottom: 1.15rem;">
+              <label style="display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text-muted);">Engagement Scope <span style="font-weight: 400; color: #64748B;">(Optional)</span></label>
+              <select name="Engagement_Scope" style="width: 100%; padding: 0.75rem; background: #0E1424; border: 1px solid var(--border-subtle); border-radius: 4px; font-size: 0.9rem; color: #FFF;">
+                <option value="Diagnostic Pilot">Introductory Diagnostic Pilot ($450)</option>
+                <option value="Plan I">Plan I: Foundation Forecast ($950)</option>
+                <option value="Plan II">Plan II: Corporate Valuation Suite ($1,850)</option>
+                <option value="Plan III">Plan III: Institutional Retainer ($2,450/mo)</option>
+                <option value="Single Research Report">Single Research Report ($150)</option>
+                <option value="Quarterly Research Subscription">Quarterly Research Subscription ($450/qtr)</option>
+                <option value="Custom Scope">Custom Scope / Other Inquiry</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <label style="display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text-muted);">Message / Ingestion Details <span style="font-weight: 400; color: #64748B;">(Optional)</span></label>
+              <textarea name="Message" rows="4" placeholder="Briefly describe your firm's current objectives, timeline, or inquiries..." style="width: 100%; padding: 0.75rem; background: #0E1424; border: 1px solid var(--border-subtle); border-radius: 4px; font-size: 0.9rem; color: #FFF; resize: vertical;"></textarea>
+            </div>
+
+            <button type="submit" class="btn-bronze" style="width: 100%; border: none;">Submit Intake Request &rarr;</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Official Firm Channel -->
+      <div class="card-photo-box" style="padding: 2.5rem; justify-content: space-between;">
+        <div>
+          <div class="card-tag">Official Channel</div>
+          <h3>Corporate Inquiries</h3>
+          <p style="margin-bottom: 2rem;">All inbound commercial communications, advisory scoping, and research subscription requests are routed through our central corporate desk:</p>
+          
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+            <strong style="font-size: 0.82rem; color: var(--bronze); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">Primary Corporate Contact</strong>
+            <a href="mailto:contact@stratacoreanalytics.com" style="color: #FFF; font-weight: 700; font-size: 1.1rem; text-decoration: none;">contact@stratacoreanalytics.com</a>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 0;">Monitored continuously for new client intake and official correspondence.</p>
+          </div>
+
+          <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.7;">
+            <strong>Engagement Notice:</strong><br>
+            All corporate advisory engagements are executed strictly under bilateral Master Client Service Agreements specifying mutual confidentiality, formal revision rounds, and explicit Statements of Work.
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+          <strong>Operating Headquarters:</strong><br>
+          105 Truman Drive, Wood Ridge, NJ 07075
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p><strong>StrataCore Analytics LLC</strong> &bull; 105 Truman Drive, Wood Ridge, NJ 07075 &bull; <a href="mailto:contact@stratacoreanalytics.com" style="color: var(--bronze); text-decoration: none;">contact@stratacoreanalytics.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDrawer() {
+      document.getElementById('drawer').classList.toggle('active');
+      document.getElementById('backdrop').classList.toggle('active');
+    }
+
+    // Auto-select dropdown option if URL has ?plan=
+    const params = new URLSearchParams(window.location.search);
+    const plan = params.get('plan') || params.get('scope');
+    if (plan) {
+      const select = document.getElementById('scope-select');
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].value.toLowerCase().includes(plan.toLowerCase())) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+    }
+  </script>
+</body>
+</html>

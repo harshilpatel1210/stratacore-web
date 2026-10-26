@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engagement Plans & Fee Schedules | StrataCore Analytics LLC</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .pilot-banner {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+    }
+    .pilot-left { max-width: 680px; }
+    .pilot-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: #10B981;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+    .pilot-title { font-size: 1.25rem; color: #FFF; margin: 0 0 0.35rem; }
+    .pilot-desc { font-size: 0.88rem; color: var(--text-muted); margin: 0; line-height: 1.5; }
+    .pilot-pricing { text-align: right; }
+    .pilot-price { font-size: 1.5rem; font-weight: 800; color: #10B981; font-family: 'JetBrains Mono', monospace; }
+    .timeline-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--bronze);
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+    .step-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--bronze);
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="drawer-backdrop" id="backdrop" onclick="toggleDrawer()"></div>
+  <aside class="drawer-panel" id="drawer">
+    <div>
+      <button class="drawer-close" onclick="toggleDrawer()">&times;</button>
+      <div style="font-family: 'JetBrains Mono'; font-size: 0.72rem; color: var(--bronze); text-transform: uppercase; margin-top: 1.5rem;">Corporate Menu</div>
+      <ul class="drawer-nav">
+        <li><a href="../index.html">Firm Overview <span>&rarr;</span></a></li>
+        <li><a href="../advisory/index.html">Wing A: Corporate Advisory <span>&rarr;</span></a></li>
+        <li><a href="../research/index.html">Wing B: Quantitative Research <span>&rarr;</span></a></li>
+        <li><a href="index.html">Engagement Plans & Fees <span>&rarr;</span></a></li>
+        <li><a href="../contact/index.html">Direct Ingestion & Contact <span>&rarr;</span></a></li>
+      </ul>
+    </div>
+    <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+      <strong>StrataCore Analytics LLC</strong><br>
+      105 Truman Drive, Wood Ridge, NJ 07075<br>
+      billing@stratacoreanalytics.com
+    </div>
+  </aside>
+
+  <header>
+    <div class="nav-container">
+      <a href="../index.html"><img src="../logo.svg" alt="StrataCore Analytics" class="brand-svg"></a>
+      <div class="nav-right">
+        <div class="wing-pill-container">
+          <a href="../advisory/index.html" class="wing-pill">Wing A: Advisory</a>
+          <a href="../research/index.html" class="wing-pill">Wing B: Research</a>
+        </div>
+        <button class="menu-btn" onclick="toggleDrawer()" aria-label="Open Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-split">
+    <div>
+      <span class="hero-tag">Pricing & Schedules</span>
+      <h1>Fee Schedules & Engagement Tiers</h1>
+      <p>SME-accessible corporate financial modeling packages executed under Master Client Service Agreement terms, paired with institutional quantitative research subscriptions.</p>
+    </div>
+    <div class="hero-img-box">
+      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80" alt="Engagement Contracts" class="hero-img">
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- SECTION 1: WING A ADVISORY FEES -->
+    <div id="advisory-fees" style="scroll-margin-top: 100px;">
+      <div class="section-title">
+        <div style="font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--bronze); text-transform: uppercase;">Wing A: Corporate Advisory</div>
+        <h2>Schedule A Engagement Packages</h2>
+        <p>Three core advisory engagement tiers structured to balance financial rigor, cash runway clarity, and capital allocation.</p>
+      </div>
+
+      <!-- Introductory Pilot Highlight Box -->
+      <div class="pilot-banner">
+        <div class="pilot-left">
+          <div class="pilot-badge">&bull; Introductory Diagnostic Pilot (Entry Option)</div>
+          <div class="pilot-title">Runway & Financial Health Diagnostic Audit</div>
+          <p class="pilot-desc">
+            A targeted review of your current P&L, monthly net burn rate, cash-zero runway date, and working capital lag (DSO/DPO). Designed for operating SMEs seeking immediate visibility without committing upfront to full multi-year modeling.
+          </p>
+          <div style="margin-top: 0.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #34D399;">
+            &check; 100% of the $450 audit fee is credited toward Plan I if upgraded within 30 days.
+          </div>
+        </div>
+        <div class="pilot-pricing">
+          <div class="pilot-price">$450 <span style="font-size: 0.82rem; font-weight: 400; color: var(--text-muted);">/ flat fee</span></div>
+          <div style="font-size: 0.78rem; color: var(--text-muted); margin: 0.25rem 0 0.75rem;">Turnaround: 5–7 Business Days</div>
+          <a href="../contact/index.html?plan=Diagnostic" class="btn-bronze" style="background: #059669; color: #FFF; padding: 0.6rem 1.25rem; font-size: 0.85rem;">Request Diagnostic &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Core 3-Plan Grid -->
+      <div class="grid-3">
+        <!-- Plan I -->
+        <div class="card-photo-box" style="background: var(--bg-card);">
+          <div class="card-body">
+            <div>
+              <div class="card-tag">Plan I: Operational Core</div>
+              <h3>Foundation Forecast</h3>
+              <p>Dynamic 3-statement operational forecasting and working capital engine for growing operating companies.</p>
+              <ul class="feature-list">
+                <li>Linked 3-Statement Forecast (12mo monthly / 3-5yr annual)</li>
+                <li>Automated working capital drivers (DSO, DIO, DPO)</li>
+                <li>Net burn trajectory & break-even unit math</li>
+                <li>Base, Upside, and Downside scenario toggle</li>
+              </ul>
+            </div>
+            <div class="price-row">
+              <div class="price-val">$950 <span class="price-unit">/ flat fee</span></div>
+              <span class="timeline-pill">Delivery Turnaround: 10–14 Business Days</span>
+              <p style="font-size: 0.78rem; color: var(--text-muted); margin: 0.35rem 0 1rem;">50% Advance Retainer &bull; 50% Final Balance</p>
+              <a href="../contact/index.html?plan=Plan1" class="btn-bronze" style="width: 100%; text-align: center;">Select Plan I</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan II -->
+        <div class="card-photo-box" style="border: 2px solid var(--bronze);">
+          <div class="card-body">
+            <div>
+              <div class="card-tag" style="color: var(--bronze); font-weight: 700;">Plan II: Most Popular</div>
+              <h3>Corporate Valuation Suite</h3>
+              <p>Institutional DCF valuation suite for capital raises, expansion CapEx, M&A readiness, or board planning.</p>
+              <ul class="feature-list">
+                <li>All Plan I three-statement forecasting deliverables</li>
+                <li>Multi-stage Discounted Cash Flow (DCF) model</li>
+                <li>Dual terminal sensitivities (Gordon Growth vs. Exit Multiples)</li>
+                <li>Dynamic WACC derivation (CAPM cost of equity)</li>
+                <li>Capital budgeting matrices (NPV / IRR)</li>
+              </ul>
+            </div>
+            <div class="price-row">
+              <div class="price-val">$1,850 <span class="price-unit">/ flat fee</span></div>
+              <span class="timeline-pill">Delivery Turnaround: 18–21 Business Days</span>
+              <p style="font-size: 0.78rem; color: var(--text-muted); margin: 0.35rem 0 1rem;">50% Advance Retainer &bull; 50% Final Balance</p>
+              <a href="../contact/index.html?plan=Plan2" class="btn-bronze" style="width: 100%; text-align: center;">Select Plan II</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan III -->
+        <div class="card-photo-box">
+          <div class="card-body">
+            <div>
+              <div class="card-tag">Plan III: Dedicated Advisory</div>
+              <h3>Institutional Retainer</h3>
+              <p>Fractional VP of Finance capabilities: ongoing modeling, budget recalibration, and executive debriefs.</p>
+              <ul class="feature-list">
+                <li>All Plan I & II forecasting and valuation deliverables</li>
+                <li>Executive board presentation deck (10–15 slides)</li>
+                <li>Dynamic debt revolvers & DSCR covenant tracking</li>
+                <li>Monthly budget-to-actual variance calibration</li>
+                <li>Two (2) 60-minute executive review sessions per month</li>
+              </ul>
+            </div>
+            <div class="price-row">
+              <div class="price-val">$2,450 <span class="price-unit">/ month</span></div>
+              <span class="timeline-pill">Cadence: Monthly Recurring Sprints</span>
+              <p style="font-size: 0.78rem; color: var(--text-muted); margin: 0.35rem 0 1rem;">Invoiced monthly in advance &bull; Non-refundable for active month</p>
+              <a href="../contact/index.html?plan=Plan3" class="btn-bronze" style="width: 100%; text-align: center;">Retain Advisory</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: WING B RESEARCH FEES -->
+    <div id="research-fees" style="margin-top: 6rem; scroll-margin-top: 100px;">
+      <div class="section-title">
+        <div style="font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--bronze); text-transform: uppercase;">Wing B: Quantitative Research</div>
+        <h2>Research Report & Subscription Pricing</h2>
+        <p>Institutional access to macroeconomic debt liquidity models and sector valuation multiple distribution research reports.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card-photo-box" style="padding: 2.25rem;">
+          <div class="card-tag">Individual Corporate Purchase</div>
+          <h3>Single Research Report</h3>
+          <p>Direct electronic access to an individual issue of either our Macroeconomic Liquidity Report or the Middle-Market Valuation Multiples Report.</p>
+          <ul class="feature-list">
+            <li>Single licensed research dossier in publication-ready PDF format</li>
+            <li>Complete statistical exhibits, tables, and regression datasets</li>
+            <li>Expensed easily via corporate card with immediate download</li>
+          </ul>
+          <div class="price-row">
+            <div class="price-val">$150 <span class="price-unit">/ report</span></div>
+            <p style="font-size: 0.78rem; color: var(--text-muted); margin: 0.35rem 0 1rem;">One-time purchase &bull; Instant electronic delivery &bull; No recurring commitment</p>
+            <a href="../contact/index.html?scope=SingleReport" class="btn-bronze" style="width: 100%; text-align: center; background: #1E2B42; color: #FFF;">Request Specific Research Report</a>
+          </div>
+        </div>
+
+        <div class="card-photo-box" style="padding: 2.25rem; border: 2px solid var(--bronze);">
+          <div class="card-tag" style="color: var(--bronze); font-weight: 700;">Institutional Intelligence Package</div>
+          <h3>Quarterly Research Subscription</h3>
+          <p>Continuous quarterly distribution covering 6 institutional deliverables per quarter across macro liquidity and sector multiple drift.</p>
+          <ul class="feature-list">
+            <li>Two (2) comprehensive flagship quarterly research reports</li>
+            <li>Monthly mid-quarter credit spread & Treasury benchmark data tearsheets</li>
+            <li>Raw, unlocked Excel quantitative models & valuation multiple matrices</li>
+            <li>Direct email delivery upon publication under Lowe v. SEC safe harbors</li>
+          </ul>
+          <div class="price-row">
+            <div class="price-val">$450 <span class="price-unit">/ quarter</span></div>
+            <p style="font-size: 0.78rem; color: var(--text-muted); margin: 0.35rem 0 1rem;">Billed quarterly in advance &bull; Uniform institutional distribution</p>
+            <a href="../contact/index.html?scope=ResearchSubscription" class="btn-bronze" style="width: 100%; text-align: center;">Subscribe to Quarterly Research</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3-DELIVERABLE STAGED PROGRESSION TABLE -->
+    <div style="margin-top: 6rem;">
+      <div style="font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--bronze); text-transform: uppercase;">Modular Execution Framework</div>
+      <h3 style="font-size: 1.85rem; color: #FFF; margin-bottom: 0.75rem;">3-Stage Deliverable Architecture by Plan</h3>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">To ensure accuracy and client alignment, every advisory plan delivers 3 distinct tangible deliverables throughout its active sprint:</p>
+
+      <table class="milestone-table">
+        <thead>
+          <tr>
+            <th style="width: 20%;">Engagement Tier</th>
+            <th style="width: 25%;">Deliverable 1 (Ingestion)</th>
+            <th style="width: 25%;">Deliverable 2 (Draft Review)</th>
+            <th style="width: 30%;">Deliverable 3 (Final Release)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Diagnostic Audit</strong><br>
+              <span class="timeline-pill">5–7 Business Days</span>
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 1</span>
+              Historical P&L normalization & chart of accounts audit
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 2</span>
+              Preliminary net monthly burn rate & cash runway schedule
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 3</span>
+              Final Runway Memo & working capital diagnostic report (100% credited to Plan I)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Plan I: Foundation</strong><br>
+              <span class="timeline-pill">10–14 Business Days</span>
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 1</span>
+              Trial balance audit, revenue driver mapping & working capital baseline
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 2</span>
+              Dynamic 3-Statement model draft (Income Statement, Balance Sheet, Cash Flow logic review)
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 3</span>
+              Final unlocked, formula-visible Excel forecast with scenario toggle engine (Base/Upside/Downside)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Plan II: Valuation Suite</strong><br>
+              <span class="timeline-pill">18–21 Business Days</span>
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 1</span>
+              Complete linked 3-Statement operational forecast engine (Plan I baseline verification)
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 2</span>
+              Multi-stage UFCF DCF valuation model & WACC hurdle rate derivation draft
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 3</span>
+              Final unlocked Valuation Suite: dual terminal exit matrices, CapEx schedules, and peer comps
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Plan III: Retainer</strong><br>
+              <span class="timeline-pill">Monthly Sprints</span>
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 1</span>
+              Monthly budget-to-actuals variance report & assumption recalibration
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 2</span>
+              Dynamic debt revolver schedules, cash sweep mechanics & DSCR covenant monitoring
+            </td>
+            <td>
+              <span class="step-tag">Deliverable 3</span>
+              10–15 slide executive board presentation deck & two live 60-minute strategy debriefs
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p><strong>StrataCore Analytics LLC</strong> &bull; Billing Desk &bull; <a href="mailto:billing@stratacoreanalytics.com" style="color: var(--bronze); text-decoration: none;">billing@stratacoreanalytics.com</a></p>
+      <div class="disclaimer-box">
+        All engagement plans and subscriptions are governed under bilateral Master Client Service Agreement terms. Remittances are payable in USD via ACH or wire transfer.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDrawer() {
+      document.getElementById('drawer').classList.toggle('active');
+      document.getElementById('backdrop').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

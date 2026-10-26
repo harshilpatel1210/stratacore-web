@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 90" width="100%" height="100%">
+  <!-- Embedded Obsidian Background -->
+  <rect width="100%" height="100%" fill="#0A0F1D" rx="6"/>
+  <defs>
+    <linearGradient id="bronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFC49E"/>
+      <stop offset="50%" stop-color="#C5A880"/>
+      <stop offset="100%" stop-color="#A6875C"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 8)">
+    <path d="M 36 6 L 66 22 L 36 38 L 6 22 Z" fill="url(#bronzeGrad)" />
+    <path d="M 6 32 L 36 48 L 66 32 L 66 40 L 36 56 L 6 40 Z" fill="#38BDF8"/>
+    <path d="M 6 48 L 36 64 L 66 48 L 66 56 L 36 72 L 6 56 Z" fill="#94A3B8" opacity="0.6"/>
+    <polygon points="36,21 43,25 36,29 29,25" fill="#FFFFFF" opacity="0.95"/>
+  </g>
+  <g transform="translate(95, 2)">
+    <text x="0" y="46" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="30" font-weight="800" letter-spacing="-0.03em" fill="#FFFFFF">
+      STRATA<tspan fill="#C5A880">CORE</tspan>
+    </text>
+    <text x="2" y="66" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.32em" fill="#94A3B8">
+      ANALYTICS LLC
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StrataCore Analytics LLC | Quantitative Financial Modeling & Advisory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="drawer-backdrop" id="backdrop" onclick="toggleDrawer()"></div>
+  <aside class="drawer-panel" id="drawer">
+    <div>
+      <button class="drawer-close" onclick="toggleDrawer()">&times;</button>
+      <div style="font-family: 'JetBrains Mono'; font-size: 0.72rem; color: var(--bronze); text-transform: uppercase; margin-top: 1.5rem;">Corporate Menu</div>
+      <ul class="drawer-nav">
+        <li><a href="index.html">Firm Overview <span>&rarr;</span></a></li>
+        <li><a href="advisory/index.html">Wing A: Corporate Advisory <span>&rarr;</span></a></li>
+        <li><a href="research/index.html">Wing B: Quantitative Research <span>&rarr;</span></a></li>
+        <li><a href="plans/index.html">Engagement Plans & Fees <span>&rarr;</span></a></li>
+        <li><a href="contact/index.html">Direct Ingestion & Contact <span>&rarr;</span></a></li>
+      </ul>
+    </div>
+    <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+      <strong>StrataCore Analytics LLC</strong><br>
+      105 Truman Drive, Wood Ridge, NJ 07075<br>
+      contact@stratacoreanalytics.com
+    </div>
+  </aside>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html"><img src="logo.svg" alt="StrataCore Analytics" class="brand-svg"></a>
+      <div class="nav-right">
+        <div class="wing-pill-container">
+          <a href="advisory/index.html" class="wing-pill">Wing A: Advisory</a>
+          <a href="research/index.html" class="wing-pill">Wing B: Research</a>
+        </div>
+        <button class="menu-btn" onclick="toggleDrawer()" aria-label="Open Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-fullwidth">
+    <div class="hero-fullwidth-inner">
+      <span class="hero-tag">B2B Financial Consulting & Analytics</span>
+      <h1>Institutional Financial Modeling & Corporate Advisory</h1>
+      <p>Delivering dynamic 3-statement forecasts, multi-stage DCF valuations, and capital allocation frameworks for middle-market leadership, operating SMEs, and corporate boards.</p>
+      <div class="hero-btn-group">
+        <a href="advisory/index.html" class="btn-bronze">Wing A: Advisory Practice</a>
+        <a href="research/index.html" class="btn-outline">Wing B: Quantitative Research</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="section-title">
+      <div style="font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--bronze); text-transform: uppercase;">Structure & Governance</div>
+      <h2>Two Core Operational Wings</h2>
+      <p>Bifurcating client-specific financial engineering from broad quantitative macroeconomic intelligence.</p>
+    </div>
+
+    <div class="grid-2">
+      <!-- Wing A Card -->
+      <div class="card-photo-box">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Corporate Financial Modeling" class="card-img">
+        <div class="card-body">
+          <div>
+            <div class="card-tag">Wing A Practice Scope</div>
+            <h3>Corporate Business Advisory</h3>
+            <p>Bespoke financial modeling, dynamic DCF valuations, and capital budgeting frameworks executed under structured Master Client Service Agreements.</p>
+            <ul class="feature-list">
+              <li>Linked Three-Statement monthly & multi-year financial forecasts</li>
+              <li>Multi-stage DCF valuations with exit multiple & perpetuity sensitivities</li>
+              <li>Cost of capital (WACC / CAPM) hurdle rate derivations</li>
+              <li>Automated working capital schedules & cash runway analytics</li>
+            </ul>
+          </div>
+          <div class="price-row">
+            <a href="advisory/index.html" class="btn-bronze" style="width: 100%;">Explore Advisory Practice &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wing B Card -->
+      <div class="card-photo-box">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Quantitative Macroeconomic Research" class="card-img">
+        <div class="card-body">
+          <div>
+            <div class="card-tag">Wing B Practice Scope</div>
+            <h3>Quantitative Research & Analytics</h3>
+            <p>Impersonal macroeconomic data pipelines, credit spread analytics, and middle-market sector valuation multiple distributions for institutional planning.</p>
+            <ul class="feature-list">
+              <li>Treasury yield curve dynamics & commercial credit spread analysis</li>
+              <li>Statistical percentile benchmarks for Enterprise Value (EV) multiples</li>
+              <li>Quarterly institutional commentary briefs on capital costs</li>
+              <li>Standardized research distributed uniformly to subscribers</li>
+            </ul>
+          </div>
+          <div class="price-row">
+            <a href="research/index.html" class="btn-bronze" style="width: 100%;">Explore Research Desk &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Informational Guide 1: Three-Statement Modeling -->
+    <div class="info-section">
+      <div class="info-header">
+        <div style="font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--bronze); text-transform: uppercase;">Advisory Fundamentals</div>
+        <h3>The Anatomy of Three-Statement Financial Modeling</h3>
+        <p>A single, unlinked forecast sheet leaves management blind to cash flow timing. Institutional financial modeling integrates all three statements into a dynamic mathematical engine.</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h4>1. Dynamic Income Statement</h4>
+          <p>Projects revenue trajectories, COGS, and operational overhead. EBITDA is dynamically linked to taxation, interest schedules, and retained earnings.</p>
+        </div>
+        <div class="info-card">
+          <h4>2. Balance Sheet Mechanics</h4>
+          <p>Tracks assets, liabilities, and equity. Working capital drivers (DSO, DIO, DPO), debt amortization schedules, and capital asset depreciation balance automatically.</p>
+        </div>
+        <div class="info-card">
+          <h4>3. Cash Flow Statement Linkage</h4>
+          <p>Reconciles operational cash with balance sheet swings, Capex requirements, and financing cash flows to reveal the true net monthly burn rate and runway date.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Informational Guide 2: Valuation Principles -->
+    <div class="info-section" style="background: var(--bg-card);">
+      <div class="info-header">
+        <div style="font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--bronze); text-transform: uppercase;">Valuation Mechanics</div>
+        <h3>Corporate Valuation & Capital Budgeting Principles</h3>
+        <p>How institutional investors and corporate boards quantitatively evaluate enterprise value and allocate capital across growth opportunities.</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h4>Discounted Cash Flow (DCF)</h4>
+          <p>Discounts projected Unlevered Free Cash Flows (UFCF) back to present value using a derived hurdle rate, isolating operating value from capital structure.</p>
+        </div>
+        <div class="info-card">
+          <h4>Cost of Capital (WACC)</h4>
+          <p>Calculates the blended cost of debt and equity capital using the Capital Asset Pricing Model (CAPM), establishing the minimum hurdle rate an investment must clear.</p>
+        </div>
+        <div class="info-card">
+          <h4>Capital Budgeting (NPV & IRR)</h4>
+          <p>Provides objective decision criteria for corporate asset acquisitions and expansions by calculating Net Present Value (NPV) and Internal Rate of Return (IRR).</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p><strong>StrataCore Analytics LLC</strong> &bull; 105 Truman Drive, Wood Ridge, NJ 07075 &bull; <a href="mailto:contact@stratacoreanalytics.com" style="color: var(--bronze); text-decoration: none;">contact@stratacoreanalytics.com</a></p>
+      <div class="disclaimer-box">
+        <strong>Statutory Regulatory Disclaimers:</strong> StrataCore Analytics LLC provides corporate business consulting, financial modeling simulations, and non-personalized quantitative research. The firm does not manage retail investment funds, hold customer assets, or provide personalized retail investment recommendations regarding public securities. All analytical models represent quantitative simulations based on client-supplied data and do not guarantee future commercial results.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDrawer() {
+      document.getElementById('drawer').classList.toggle('active');
+      document.getElementById('backdrop').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
