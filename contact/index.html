@@ -3,22 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Corporate Intake & Contact | StrataCore Analytics LLC</title>
+  <title>Corporate Intake & Contact | StrataCore Analytics</title>
+  <!-- SEO & Open Graph Metadata -->
+  <meta name="description" content="Initiate a corporate financial modeling engagement, calibrate advisory scope availability, or request institutional quantitative research access.">
+  <link rel="canonical" href="https://stratacoreanalytics.com/contact/">
+  <link rel="icon" type="image/svg+xml" href="../logo.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="StrataCore Analytics LLC">
+  <meta property="og:title" content="Corporate Intake & Contact | StrataCore Analytics">
+  <meta property="og:description" content="Initiate a corporate financial modeling engagement, calibrate advisory scope availability, or request institutional quantitative research access.">
+  <meta property="og:url" content="https://stratacoreanalytics.com/contact/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Corporate Intake & Contact | StrataCore Analytics">
+  <meta name="twitter:description" content="Initiate a corporate financial modeling engagement, calibrate advisory scope availability, or request institutional quantitative research access.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80">
+  <!-- End SEO Metadata -->
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="drawer-backdrop" id="backdrop" onclick="toggleDrawer()"></div>
-  <aside class="drawer-panel" id="drawer">
+  <aside class="drawer-panel" id="drawer" role="dialog" aria-modal="true" aria-label="Site Navigation">
     <div>
-      <button class="drawer-close" onclick="toggleDrawer()">&times;</button>
+      <button class="drawer-close" onclick="toggleDrawer()" aria-label="Close Navigation Menu" title="Close Menu">&times;</button>
       <div style="font-family: 'JetBrains Mono'; font-size: 0.72rem; color: var(--bronze); text-transform: uppercase; margin-top: 1.5rem;">Corporate Menu</div>
+      <nav aria-label="Drawer Navigation">
       <ul class="drawer-nav">
-        <li><a href="../index.html">Firm Overview <span>&rarr;</span></a></li>
-        <li><a href="../advisory/index.html">Wing A: Corporate Advisory <span>&rarr;</span></a></li>
-        <li><a href="../research/index.html">Wing B: Quantitative Research <span>&rarr;</span></a></li>
-        <li><a href="../plans/index.html">Engagement Plans & Fees <span>&rarr;</span></a></li>
-        <li><a href="index.html">Direct Ingestion & Contact <span>&rarr;</span></a></li>
+        <li><a href="../" title="StrataCore Analytics Home">Firm Overview <span>&rarr;</span></a></li>
+        <li><a href="../advisory/" title="Wing A: Corporate Advisory">Wing A: Advisory <span>&rarr;</span></a></li>
+        <li><a href="../research/" title="Wing B: Quantitative Research">Wing B: Research <span>&rarr;</span></a></li>
+        <li><a href="../plans/" title="Engagement Plans & Fee Schedules">Engagement Plans & Fees <span>&rarr;</span></a></li>
+        <li><a href="./">Direct Ingestion & Contact <span>&rarr;</span></a></li>
       </ul>
+      </nav>
     </div>
     <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
       <strong>StrataCore Analytics LLC</strong><br>
@@ -29,13 +47,13 @@
 
   <header>
     <div class="nav-container">
-      <a href="../index.html"><img src="../logo.svg" alt="StrataCore Analytics" class="brand-svg"></a>
+      <a href="../" title="StrataCore Analytics Home"><img src="../logo.svg" alt="StrataCore Analytics" class="brand-svg" width="240" height="42"></a>
       <div class="nav-right">
-        <div class="wing-pill-container">
-          <a href="../advisory/index.html" class="wing-pill">Wing A: Advisory</a>
-          <a href="../research/index.html" class="wing-pill">Wing B: Research</a>
-        </div>
-        <button class="menu-btn" onclick="toggleDrawer()" aria-label="Open Menu"><span></span><span></span><span></span></button>
+        <nav class="wing-pill-container" aria-label="Primary Practice Areas">
+          <a href="../advisory/" title="Wing A: Corporate Advisory" class="wing-pill">Wing A: Advisory</a>
+          <a href="../research/" title="Wing B: Quantitative Research" class="wing-pill">Wing B: Research</a>
+        </nav>
+        <button class="menu-btn" onclick="toggleDrawer()" aria-label="Open Menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
@@ -47,55 +65,60 @@
       <p>Initiate a financial modeling engagement, book a diagnostic audit, or request institutional research publication access.</p>
     </div>
     <div class="hero-img-box">
-      <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80" alt="Executive Corporate Boardroom" class="hero-img">
+      <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80" srcset="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=480 480w, https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800 800w, https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=1000 1000w" sizes="(max-width: 900px) 92vw, 500px" alt="Executive Corporate Boardroom" class="hero-img" width="1000" height="420">
     </div>
   </section>
 
-  <main class="container">
+  <main id="main-content" class="container">
     <div class="grid-2">
       <!-- Direct Intake Form -->
       <div class="card-photo-box" style="padding: 2.5rem;">
         <div>
           <div class="card-tag">Direct Intake</div>
-          <h3>Initiate Engagement</h3>
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: #FFF;">Initiate Engagement</h2>
           <p>Submit your inquiry below to initiate communications with our desk:</p>
           
           <form action="mailto:contact@stratacoreanalytics.com" method="POST" enctype="text/plain">
-            <div style="margin-bottom: 1.15rem;">
-              <label style="display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text-muted);">Company / Legal Entity</label>
-              <input type="text" name="Company" required style="width: 100%; padding: 0.75rem; background: #0E1424; border: 1px solid var(--border-subtle); border-radius: 4px; font-size: 0.9rem; color: #FFF;">
+            <div class="hp-field" aria-hidden="true">
+              <label for="website_url">Leave this field blank</label>
+              <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off">
             </div>
 
             <div style="margin-bottom: 1.15rem;">
-              <label style="display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text-muted);">Contact Name & Title</label>
-              <input type="text" name="Contact_Name" required style="width: 100%; padding: 0.75rem; background: #0E1424; border: 1px solid var(--border-subtle); border-radius: 4px; font-size: 0.9rem; color: #FFF;">
+              <label for="company-name" class="form-label">Company / Legal Entity</label>
+              <input type="text" id="company-name" name="Company" autocomplete="organization" required class="form-control">
             </div>
 
             <div style="margin-bottom: 1.15rem;">
-              <label style="display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text-muted);">Corporate Email</label>
-              <input type="email" name="Email" required style="width: 100%; padding: 0.75rem; background: #0E1424; border: 1px solid var(--border-subtle); border-radius: 4px; font-size: 0.9rem; color: #FFF;">
+              <label for="contact-name" class="form-label">Contact Name &amp; Title</label>
+              <input type="text" id="contact-name" name="Contact_Name" autocomplete="name" required class="form-control">
             </div>
 
-            <!-- Calibrated Engagement Scope Dropdown -->
             <div style="margin-bottom: 1.15rem;">
-              <label style="display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text-muted);">Engagement Scope <span style="font-weight: 400; color: #64748B;">(Optional)</span></label>
-              <select name="Engagement_Scope" style="width: 100%; padding: 0.75rem; background: #0E1424; border: 1px solid var(--border-subtle); border-radius: 4px; font-size: 0.9rem; color: #FFF;">
+              <label for="corporate-email" class="form-label">Corporate Email</label>
+              <input type="email" id="corporate-email" name="Email" autocomplete="email" required class="form-control">
+            </div>
+
+            <div style="margin-bottom: 1.15rem;">
+              <label for="engagement-scope" class="form-label">Engagement Scope <span class="form-optional">(Optional)</span></label>
+              <select id="engagement-scope" name="Engagement_Scope" class="form-control">
+                <option value="Unspecified">-- Select an Engagement Tier (Optional) --</option>
                 <option value="Diagnostic Pilot">Introductory Diagnostic Pilot ($450)</option>
-                <option value="Plan I">Plan I: Foundation Forecast ($950)</option>
+                <option value="Plan I">Plan I: Foundation Financial Forecast ($950)</option>
                 <option value="Plan II">Plan II: Corporate Valuation Suite ($1,850)</option>
                 <option value="Plan III">Plan III: Institutional Retainer ($2,450/mo)</option>
                 <option value="Single Research Report">Single Research Report ($150)</option>
                 <option value="Quarterly Research Subscription">Quarterly Research Subscription ($450/qtr)</option>
-                <option value="Custom Scope">Custom Scope / Other Inquiry</option>
+                <option value="Custom Scope">General Inquiries / Custom Scope</option>
               </select>
             </div>
 
             <div style="margin-bottom: 1.5rem;">
-              <label style="display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text-muted);">Message / Ingestion Details <span style="font-weight: 400; color: #64748B;">(Optional)</span></label>
-              <textarea name="Message" rows="4" placeholder="Briefly describe your firm's current objectives, timeline, or inquiries..." style="width: 100%; padding: 0.75rem; background: #0E1424; border: 1px solid var(--border-subtle); border-radius: 4px; font-size: 0.9rem; color: #FFF; resize: vertical;"></textarea>
+              <label for="intake-message" class="form-label">Message / Ingestion Details <span class="form-optional">(Optional)</span></label>
+              <textarea id="intake-message" name="Message" rows="4" placeholder="Briefly describe your firm's current objectives, timeline, or inquiries..." class="form-control" style="resize: vertical;"></textarea>
             </div>
 
-            <button type="submit" class="btn-bronze" style="width: 100%; border: none;">Submit Intake Request &rarr;</button>
+            <button type="submit" class="btn-bronze" style="width: 100%;">Submit Intake Request &rarr;</button>
           </form>
         </div>
       </div>
@@ -104,12 +127,12 @@
       <div class="card-photo-box" style="padding: 2.5rem; justify-content: space-between;">
         <div>
           <div class="card-tag">Official Channel</div>
-          <h3>Corporate Inquiries</h3>
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: #FFF;">Corporate Inquiries</h2>
           <p style="margin-bottom: 2rem;">All inbound commercial communications, advisory scoping, and research subscription requests are routed through our central corporate desk:</p>
           
           <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
             <strong style="font-size: 0.82rem; color: var(--bronze); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">Primary Corporate Contact</strong>
-            <a href="mailto:contact@stratacoreanalytics.com" style="color: #FFF; font-weight: 700; font-size: 1.1rem; text-decoration: none;">contact@stratacoreanalytics.com</a>
+            <a href="mailto:contact@stratacoreanalytics.com" title="Email Corporate Inquiries" style="color: #FFF; font-weight: 700; font-size: 1.1rem; text-decoration: none;">contact@stratacoreanalytics.com</a>
             <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 0;">Monitored continuously for new client intake and official correspondence.</p>
           </div>
 
@@ -129,28 +152,33 @@
 
   <footer>
     <div class="footer-inner">
-      <p><strong>StrataCore Analytics LLC</strong> &bull; 105 Truman Drive, Wood Ridge, NJ 07075 &bull; <a href="mailto:contact@stratacoreanalytics.com" style="color: var(--bronze); text-decoration: none;">contact@stratacoreanalytics.com</a></p>
+      <p><strong>StrataCore Analytics LLC</strong> &bull; 105 Truman Drive, Wood Ridge, NJ 07075 &bull; <a href="mailto:contact@stratacoreanalytics.com" title="Email Corporate Inquiries" style="color: var(--bronze); text-decoration: none;">contact@stratacoreanalytics.com</a></p>
     </div>
   </footer>
 
   <script>
-    function toggleDrawer() {
-      document.getElementById('drawer').classList.toggle('active');
-      document.getElementById('backdrop').classList.toggle('active');
-    }
+    const drawer = document.getElementById('drawer');
+    const backdrop = document.getElementById('backdrop');
+    const menuBtn = document.querySelector('.menu-btn, .menu-trigger');
+    const closeBtn = document.querySelector('.drawer-close');
 
-    // Auto-select dropdown option if URL has ?plan=
-    const params = new URLSearchParams(window.location.search);
-    const plan = params.get('plan') || params.get('scope');
-    if (plan) {
-      const select = document.getElementById('scope-select');
-      for (let i = 0; i < select.options.length; i++) {
-        if (select.options[i].value.toLowerCase().includes(plan.toLowerCase())) {
-          select.selectedIndex = i;
-          break;
-        }
+    function toggleDrawer(forceState) {
+      const isOpen = typeof forceState === 'boolean' ? forceState : !drawer.classList.contains('active');
+      drawer.classList.toggle('active', isOpen);
+      backdrop.classList.toggle('active', isOpen);
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', String(isOpen));
+      if (isOpen && closeBtn) {
+        setTimeout(() => closeBtn.focus(), 50);
+      } else if (!isOpen && menuBtn) {
+        menuBtn.focus();
       }
     }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && drawer && drawer.classList.contains('active')) {
+        toggleDrawer(false);
+      }
+    });
   </script>
 </body>
 </html>

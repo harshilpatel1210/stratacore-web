@@ -3,22 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quantitative Intelligence & Research Reports | StrataCore Analytics LLC</title>
+  <title>Quantitative Research & Intelligence | StrataCore Analytics</title>
+  <!-- SEO & Open Graph Metadata -->
+  <meta name="description" content="Non-personalized macroeconomic liquidity indicators, yield curve dynamics, and middle-market sector valuation multiple reports for corporate leadership.">
+  <link rel="canonical" href="https://stratacoreanalytics.com/research/">
+  <link rel="icon" type="image/svg+xml" href="../logo.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="StrataCore Analytics LLC">
+  <meta property="og:title" content="Quantitative Research & Intelligence | StrataCore Analytics">
+  <meta property="og:description" content="Non-personalized macroeconomic liquidity indicators, yield curve dynamics, and middle-market sector valuation multiple reports for corporate leadership.">
+  <meta property="og:url" content="https://stratacoreanalytics.com/research/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quantitative Research & Intelligence | StrataCore Analytics">
+  <meta name="twitter:description" content="Non-personalized macroeconomic liquidity indicators, yield curve dynamics, and middle-market sector valuation multiple reports for corporate leadership.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80">
+  <!-- End SEO Metadata -->
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="drawer-backdrop" id="backdrop" onclick="toggleDrawer()"></div>
-  <aside class="drawer-panel" id="drawer">
+  <aside class="drawer-panel" id="drawer" role="dialog" aria-modal="true" aria-label="Site Navigation">
     <div>
-      <button class="drawer-close" onclick="toggleDrawer()">&times;</button>
+      <button class="drawer-close" onclick="toggleDrawer()" aria-label="Close Navigation Menu" title="Close Menu">&times;</button>
       <div style="font-family: 'JetBrains Mono'; font-size: 0.72rem; color: var(--bronze); text-transform: uppercase; margin-top: 1.5rem;">Corporate Menu</div>
+      <nav aria-label="Drawer Navigation">
       <ul class="drawer-nav">
-        <li><a href="../index.html">Firm Overview <span>&rarr;</span></a></li>
-        <li><a href="../advisory/index.html">Wing A: Corporate Advisory <span>&rarr;</span></a></li>
-        <li><a href="index.html">Wing B: Quantitative Research <span>&rarr;</span></a></li>
-        <li><a href="../plans/index.html">Engagement Plans & Fees <span>&rarr;</span></a></li>
-        <li><a href="../contact/index.html">Direct Ingestion & Contact <span>&rarr;</span></a></li>
+        <li><a href="../" title="StrataCore Analytics Home">Firm Overview <span>&rarr;</span></a></li>
+        <li><a href="../advisory/" title="Wing A: Corporate Advisory">Wing A: Advisory <span>&rarr;</span></a></li>
+        <li><a href="./">Wing B: Research <span>&rarr;</span></a></li>
+        <li><a href="../plans/" title="Engagement Plans & Fee Schedules">Engagement Plans & Fees <span>&rarr;</span></a></li>
+        <li><a href="../contact/" title="Corporate Intake & Contact">Direct Ingestion & Contact <span>&rarr;</span></a></li>
       </ul>
+      </nav>
     </div>
     <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
       <strong>StrataCore Analytics LLC</strong><br>
@@ -29,13 +47,13 @@
 
   <header>
     <div class="nav-container">
-      <a href="../index.html"><img src="../logo.svg" alt="StrataCore Analytics" class="brand-svg"></a>
+      <a href="../" title="StrataCore Analytics Home"><img src="../logo.svg" alt="StrataCore Analytics" class="brand-svg" width="240" height="42"></a>
       <div class="nav-right">
-        <div class="wing-pill-container">
-          <a href="../advisory/index.html" class="wing-pill">Wing A: Advisory</a>
-          <a href="index.html" class="wing-pill active">Wing B: Research</a>
-        </div>
-        <button class="menu-btn" onclick="toggleDrawer()" aria-label="Open Menu"><span></span><span></span><span></span></button>
+        <nav class="wing-pill-container" aria-label="Primary Practice Areas">
+          <a href="../advisory/" title="Wing A: Corporate Advisory" class="wing-pill">Wing A: Advisory</a>
+          <a href="./" class="wing-pill active">Wing B: Research</a>
+        </nav>
+        <button class="menu-btn" onclick="toggleDrawer()" aria-label="Open Menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
@@ -47,15 +65,15 @@
       <p>Non-personalized macroeconomic data pipelines, credit liquidity indicators, and middle-market sector valuation distribution research reports for institutional subscribers and corporate leadership.</p>
       <div>
         <a href="../plans/index.html#research-fees" class="btn-bronze">View Research Report Pricing</a>
-        <a href="../contact/index.html" class="btn-outline">Inquire on Distribution</a>
+        <a href="../contact/" title="Corporate Intake & Contact" class="btn-outline">Inquire on Distribution</a>
       </div>
     </div>
     <div class="hero-img-box">
-      <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1000&q=80" alt="Financial Markets Analysis" class="hero-img">
+      <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1000&q=80" srcset="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=480 480w, https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=800 800w, https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1000 1000w" sizes="(max-width: 900px) 92vw, 500px" alt="Financial Markets Analysis" class="hero-img" width="1000" height="420">
     </div>
   </section>
 
-  <main class="container">
+  <main id="main-content" class="container">
     <div class="section-title">
       <div style="font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--bronze); text-transform: uppercase;">Analytical Coverage</div>
       <h2>Core Research Report Coverage Areas</h2>
@@ -64,7 +82,7 @@
 
     <div class="grid-2">
       <div class="card-photo-box">
-        <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80" alt="Debt Liquidity Research" class="card-img">
+        <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80" srcset="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=400 400w, https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=640 640w, https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800 800w" sizes="(max-width: 768px) 92vw, 380px" alt="Debt Liquidity Research" class="card-img" width="800" height="210" loading="lazy">
         <div class="card-body">
           <div class="card-tag">Coverage Area I</div>
           <h3>Macroeconomic Debt & Liquidity Analysis</h3>
@@ -73,7 +91,7 @@
       </div>
 
       <div class="card-photo-box">
-        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Sector Multiples Research" class="card-img">
+        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" srcset="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=400 400w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=640 640w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800 800w" sizes="(max-width: 768px) 92vw, 380px" alt="Sector Multiples Research" class="card-img" width="800" height="210" loading="lazy">
         <div class="card-body">
           <div class="card-tag">Coverage Area II</div>
           <h3>Sector Valuation Multiple Distributions</h3>
@@ -116,15 +134,33 @@
 
   <footer>
     <div class="footer-inner">
-      <p><strong>StrataCore Analytics LLC</strong> &bull; Research Desk &bull; <a href="mailto:research@stratacoreanalytics.com" style="color: var(--bronze); text-decoration: none;">research@stratacoreanalytics.com</a></p>
+      <p><strong>StrataCore Analytics LLC</strong> &bull; Research Desk &bull; <a href="mailto:research@stratacoreanalytics.com" title="Email Wing B Research Desk" style="color: var(--bronze); text-decoration: none;">research@stratacoreanalytics.com</a></p>
     </div>
   </footer>
 
   <script>
-    function toggleDrawer() {
-      document.getElementById('drawer').classList.toggle('active');
-      document.getElementById('backdrop').classList.toggle('active');
+    const drawer = document.getElementById('drawer');
+    const backdrop = document.getElementById('backdrop');
+    const menuBtn = document.querySelector('.menu-btn, .menu-trigger');
+    const closeBtn = document.querySelector('.drawer-close');
+
+    function toggleDrawer(forceState) {
+      const isOpen = typeof forceState === 'boolean' ? forceState : !drawer.classList.contains('active');
+      drawer.classList.toggle('active', isOpen);
+      backdrop.classList.toggle('active', isOpen);
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', String(isOpen));
+      if (isOpen && closeBtn) {
+        setTimeout(() => closeBtn.focus(), 50);
+      } else if (!isOpen && menuBtn) {
+        menuBtn.focus();
+      }
     }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && drawer && drawer.classList.contains('active')) {
+        toggleDrawer(false);
+      }
+    });
   </script>
 </body>
 </html>

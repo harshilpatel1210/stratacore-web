@@ -245,3 +245,280 @@ footer { background: #060911; border-top: 1px solid var(--border-subtle); paddin
     padding: 1.25rem !important;
   }
 }
+
+
+/* === BATCH 1: HIGH-SEVERITY, CONTRAST & MOBILE OVERFLOW FIXES === */
+.table-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+}
+.table-scroll-wrapper .milestone-table {
+  margin-top: 0;
+  border: none;
+  min-width: 600px;
+}
+
+.card-photo-box {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #E2E8F0;
+}
+.form-optional {
+  font-weight: 400;
+  color: #CBD5E1;
+}
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  background: #0E1424;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .card-photo-box {
+    padding: 1.5rem !important;
+  }
+  .card-body {
+    padding: 1.5rem;
+  }
+}
+
+
+/* === BATCH 2: ACCESSIBILITY, FOCUS-VISIBLE, TAP TARGETS & HOVER STATES === */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: var(--bronze);
+  color: var(--bg-dark);
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  z-index: 2000;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-blue) !important;
+  outline-offset: 3px !important;
+}
+
+.drawer-close {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.drawer-close:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.drawer-nav li {
+  margin-bottom: 0.5rem;
+}
+.drawer-nav a {
+  min-height: 44px;
+  align-items: center;
+  padding: 0.65rem 0.5rem;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+.drawer-nav a:hover {
+  color: var(--bronze);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.wing-pill {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+}
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0.25rem 0.35rem;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+}
+footer a:hover {
+  color: var(--bronze-light) !important;
+  text-decoration: underline !important;
+  background: rgba(197, 168, 128, 0.08);
+}
+
+
+/* === BATCH 4: DESIGN TOKENS, UNIFIED BUTTONS, CARD ALIGNMENT & MOBILE >= 14PX === */
+:root {
+  --font-sm: 0.875rem;      /* 14px floor */
+  --font-base: 1rem;        /* 16px */
+  --font-md: 1.125rem;      /* 18px */
+  --font-h3: 1.35rem;       /* 21.6px */
+  --font-h2: 2.15rem;       /* 34.4px */
+  --font-h1-mobile: 2rem;   /* 32px */
+  --font-h1-desktop: 3rem;  /* 48px */
+
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-pill: 24px;
+  --grid-gap: 2rem;
+}
+
+/* Unified Grid Gaps & Card Radii */
+.grid-2,
+.grid-3,
+.info-grid {
+  gap: var(--grid-gap) !important;
+}
+
+.card-photo-box,
+.info-section {
+  border-radius: var(--radius-md) !important;
+}
+
+.info-card,
+.viz-box,
+.disclaimer-box,
+.table-scroll-wrapper {
+  border-radius: var(--radius-sm) !important;
+}
+
+/* Equal-Height Cards & Bottom-Pinned Price/CTA Rows */
+.card-photo-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.card-body > div:first-child {
+  flex: 1 1 auto;
+}
+.price-row {
+  margin-top: auto !important;
+  padding-top: 1.25rem;
+}
+.info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+/* Unified H3 Typography */
+.card-body h3,
+.info-section h3,
+.info-header h3 {
+  font-size: var(--font-h3) !important;
+  font-weight: var(--weight-bold) !important;
+  margin-bottom: 0.75rem !important;
+  line-height: 1.3;
+}
+
+/* Unified Buttons Across All Pages */
+.btn-bronze,
+.btn-outline {
+  font-size: 0.95rem !important; /* 15.2px unified */
+  font-weight: var(--weight-bold) !important;
+  padding: 0.85rem 1.75rem !important;
+  border-radius: var(--radius-sm) !important;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+/* Cross-Page H1 & First-Section Top Padding Alignment */
+.hero-split,
+.hero-fullwidth,
+.page-hero {
+  padding-top: 5rem !important;
+  padding-bottom: 4.5rem !important;
+}
+.hero-split h1,
+.hero-fullwidth h1,
+.page-hero h1 {
+  font-size: var(--font-h1-desktop) !important;
+  font-weight: var(--weight-extrabold) !important;
+  line-height: 1.15 !important;
+}
+
+@media (max-width: 900px) {
+  .hero-split,
+  .hero-fullwidth,
+  .page-hero {
+    padding-top: 2.5rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .hero-split h1,
+  .hero-fullwidth h1,
+  .page-hero h1 {
+    font-size: var(--font-h1-mobile) !important;
+  }
+}
+
+/* Mobile Typography Floor >= 14px (0.875rem) */
+@media (max-width: 768px) {
+  .hero-tag,
+  .card-tag,
+  .price-unit,
+  .milestone-table th,
+  .milestone-table td,
+  footer,
+  footer p,
+  footer a,
+  .disclaimer-box,
+  [style*="font-size: 0.7"],
+  [style*="font-size: 0.8"] {
+    font-size: var(--font-sm) !important;
+  }
+}

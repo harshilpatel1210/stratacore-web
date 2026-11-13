@@ -3,7 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engagement Plans & Fee Schedules | StrataCore Analytics LLC</title>
+  <title>Engagement Plans & Fee Schedules | StrataCore Analytics</title>
+  <!-- SEO & Open Graph Metadata -->
+  <meta name="description" content="Transparent Schedule A corporate financial modeling fee tiers, diagnostic pilots, and quarterly quantitative research subscription pricing.">
+  <link rel="canonical" href="https://stratacoreanalytics.com/plans/">
+  <link rel="icon" type="image/svg+xml" href="../logo.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="StrataCore Analytics LLC">
+  <meta property="og:title" content="Engagement Plans & Fee Schedules | StrataCore Analytics">
+  <meta property="og:description" content="Transparent Schedule A corporate financial modeling fee tiers, diagnostic pilots, and quarterly quantitative research subscription pricing.">
+  <meta property="og:url" content="https://stratacoreanalytics.com/plans/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Engagement Plans & Fee Schedules | StrataCore Analytics">
+  <meta name="twitter:description" content="Transparent Schedule A corporate financial modeling fee tiers, diagnostic pilots, and quarterly quantitative research subscription pricing.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80">
+  <!-- End SEO Metadata -->
   <link rel="stylesheet" href="../style.css">
   <style>
     .pilot-banner {
@@ -51,18 +66,21 @@
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="drawer-backdrop" id="backdrop" onclick="toggleDrawer()"></div>
-  <aside class="drawer-panel" id="drawer">
+  <aside class="drawer-panel" id="drawer" role="dialog" aria-modal="true" aria-label="Site Navigation">
     <div>
-      <button class="drawer-close" onclick="toggleDrawer()">&times;</button>
+      <button class="drawer-close" onclick="toggleDrawer()" aria-label="Close Navigation Menu" title="Close Menu">&times;</button>
       <div style="font-family: 'JetBrains Mono'; font-size: 0.72rem; color: var(--bronze); text-transform: uppercase; margin-top: 1.5rem;">Corporate Menu</div>
+      <nav aria-label="Drawer Navigation">
       <ul class="drawer-nav">
-        <li><a href="../index.html">Firm Overview <span>&rarr;</span></a></li>
-        <li><a href="../advisory/index.html">Wing A: Corporate Advisory <span>&rarr;</span></a></li>
-        <li><a href="../research/index.html">Wing B: Quantitative Research <span>&rarr;</span></a></li>
-        <li><a href="index.html">Engagement Plans & Fees <span>&rarr;</span></a></li>
-        <li><a href="../contact/index.html">Direct Ingestion & Contact <span>&rarr;</span></a></li>
+        <li><a href="../" title="StrataCore Analytics Home">Firm Overview <span>&rarr;</span></a></li>
+        <li><a href="../advisory/" title="Wing A: Corporate Advisory">Wing A: Advisory <span>&rarr;</span></a></li>
+        <li><a href="../research/" title="Wing B: Quantitative Research">Wing B: Research <span>&rarr;</span></a></li>
+        <li><a href="./">Engagement Plans & Fees <span>&rarr;</span></a></li>
+        <li><a href="../contact/" title="Corporate Intake & Contact">Direct Ingestion & Contact <span>&rarr;</span></a></li>
       </ul>
+      </nav>
     </div>
     <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
       <strong>StrataCore Analytics LLC</strong><br>
@@ -73,13 +91,13 @@
 
   <header>
     <div class="nav-container">
-      <a href="../index.html"><img src="../logo.svg" alt="StrataCore Analytics" class="brand-svg"></a>
+      <a href="../" title="StrataCore Analytics Home"><img src="../logo.svg" alt="StrataCore Analytics" class="brand-svg" width="240" height="42"></a>
       <div class="nav-right">
-        <div class="wing-pill-container">
-          <a href="../advisory/index.html" class="wing-pill">Wing A: Advisory</a>
-          <a href="../research/index.html" class="wing-pill">Wing B: Research</a>
-        </div>
-        <button class="menu-btn" onclick="toggleDrawer()" aria-label="Open Menu"><span></span><span></span><span></span></button>
+        <nav class="wing-pill-container" aria-label="Primary Practice Areas">
+          <a href="../advisory/" title="Wing A: Corporate Advisory" class="wing-pill">Wing A: Advisory</a>
+          <a href="../research/" title="Wing B: Quantitative Research" class="wing-pill">Wing B: Research</a>
+        </nav>
+        <button class="menu-btn" onclick="toggleDrawer()" aria-label="Open Menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
@@ -91,11 +109,11 @@
       <p>SME-accessible corporate financial modeling packages executed under Master Client Service Agreement terms, paired with institutional quantitative research subscriptions.</p>
     </div>
     <div class="hero-img-box">
-      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80" alt="Engagement Contracts" class="hero-img">
+      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80" srcset="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=480 480w, https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800 800w, https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000 1000w" sizes="(max-width: 900px) 92vw, 500px" alt="Engagement Contracts" class="hero-img" width="1000" height="420">
     </div>
   </section>
 
-  <main class="container">
+  <main id="main-content" class="container">
     <!-- SECTION 1: WING A ADVISORY FEES -->
     <div id="advisory-fees" style="scroll-margin-top: 100px;">
       <div class="section-title">
@@ -119,7 +137,7 @@
         <div class="pilot-pricing">
           <div class="pilot-price">$450 <span style="font-size: 0.82rem; font-weight: 400; color: var(--text-muted);">/ flat fee</span></div>
           <div style="font-size: 0.78rem; color: var(--text-muted); margin: 0.25rem 0 0.75rem;">Turnaround: 5–7 Business Days</div>
-          <a href="../contact/index.html?plan=Diagnostic" class="btn-bronze" style="background: #059669; color: #FFF; padding: 0.6rem 1.25rem; font-size: 0.85rem;">Request Diagnostic &rarr;</a>
+          <a href="../contact/index.html?plan=Diagnostic" class="btn-bronze" style="background: #047857; color: #FFF; padding: 0.6rem 1.25rem; font-size: 0.85rem;">Request Diagnostic &rarr;</a>
         </div>
       </div>
 
@@ -143,7 +161,7 @@
               <div class="price-val">$950 <span class="price-unit">/ flat fee</span></div>
               <span class="timeline-pill">Delivery Turnaround: 10–14 Business Days</span>
               <p style="font-size: 0.78rem; color: var(--text-muted); margin: 0.35rem 0 1rem;">50% Advance Retainer &bull; 50% Final Balance</p>
-              <a href="../contact/index.html?plan=Plan1" class="btn-bronze" style="width: 100%; text-align: center;">Select Plan I</a>
+              <a href="../contact/index.html?plan=Plan1" class="btn-bronze" style="width: 100%; text-align: center;">Select Plan I &rarr;</a>
             </div>
           </div>
         </div>
@@ -167,7 +185,7 @@
               <div class="price-val">$1,850 <span class="price-unit">/ flat fee</span></div>
               <span class="timeline-pill">Delivery Turnaround: 18–21 Business Days</span>
               <p style="font-size: 0.78rem; color: var(--text-muted); margin: 0.35rem 0 1rem;">50% Advance Retainer &bull; 50% Final Balance</p>
-              <a href="../contact/index.html?plan=Plan2" class="btn-bronze" style="width: 100%; text-align: center;">Select Plan II</a>
+              <a href="../contact/index.html?plan=Plan2" class="btn-bronze" style="width: 100%; text-align: center;">Select Plan II &rarr;</a>
             </div>
           </div>
         </div>
@@ -191,7 +209,7 @@
               <div class="price-val">$2,450 <span class="price-unit">/ month</span></div>
               <span class="timeline-pill">Cadence: Monthly Recurring Sprints</span>
               <p style="font-size: 0.78rem; color: var(--text-muted); margin: 0.35rem 0 1rem;">Invoiced monthly in advance &bull; Non-refundable for active month</p>
-              <a href="../contact/index.html?plan=Plan3" class="btn-bronze" style="width: 100%; text-align: center;">Retain Advisory</a>
+              <a href="../contact/index.html?plan=Plan3" class="btn-bronze" style="width: 100%; text-align: center;">Retain Advisory &rarr;</a>
             </div>
           </div>
         </div>
@@ -248,6 +266,7 @@
       <h3 style="font-size: 1.85rem; color: #FFF; margin-bottom: 0.75rem;">3-Stage Deliverable Architecture by Plan</h3>
       <p style="color: var(--text-muted); margin-bottom: 1.5rem;">To ensure accuracy and client alignment, every advisory plan delivers 3 distinct tangible deliverables throughout its active sprint:</p>
 
+      <div class="table-scroll-wrapper">
       <table class="milestone-table">
         <thead>
           <tr>
@@ -332,12 +351,13 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
   </main>
 
   <footer>
     <div class="footer-inner">
-      <p><strong>StrataCore Analytics LLC</strong> &bull; Billing Desk &bull; <a href="mailto:billing@stratacoreanalytics.com" style="color: var(--bronze); text-decoration: none;">billing@stratacoreanalytics.com</a></p>
+      <p><strong>StrataCore Analytics LLC</strong> &bull; Billing Desk &bull; <a href="mailto:billing@stratacoreanalytics.com" title="Email Billing & Invoicing" style="color: var(--bronze); text-decoration: none;">billing@stratacoreanalytics.com</a></p>
       <div class="disclaimer-box">
         All engagement plans and subscriptions are governed under bilateral Master Client Service Agreement terms. Remittances are payable in USD via ACH or wire transfer.
       </div>
@@ -345,10 +365,28 @@
   </footer>
 
   <script>
-    function toggleDrawer() {
-      document.getElementById('drawer').classList.toggle('active');
-      document.getElementById('backdrop').classList.toggle('active');
+    const drawer = document.getElementById('drawer');
+    const backdrop = document.getElementById('backdrop');
+    const menuBtn = document.querySelector('.menu-btn, .menu-trigger');
+    const closeBtn = document.querySelector('.drawer-close');
+
+    function toggleDrawer(forceState) {
+      const isOpen = typeof forceState === 'boolean' ? forceState : !drawer.classList.contains('active');
+      drawer.classList.toggle('active', isOpen);
+      backdrop.classList.toggle('active', isOpen);
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', String(isOpen));
+      if (isOpen && closeBtn) {
+        setTimeout(() => closeBtn.focus(), 50);
+      } else if (!isOpen && menuBtn) {
+        menuBtn.focus();
+      }
     }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && drawer && drawer.classList.contains('active')) {
+        toggleDrawer(false);
+      }
+    });
   </script>
 </body>
 </html>
